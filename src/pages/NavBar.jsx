@@ -1,9 +1,17 @@
 import Nav  from "react-bootstrap/Nav";
+import { useState } from 'react';
 
-export const NavBar = (props) => {
+export const NavBar = props => {
+    console.log(props)
+
+    const [key, setKey] = useState('/');
+
+    const selectKey = (selectedKey) => {
+        setKey(selectedKey);
+    }
 
     return (
-        <Nav justify variant="tabs my-3" defaultActiveKey="home">
+        <Nav justify variant="tabs my-3" activeKey={key} onSelect={selectKey}>
             <Nav.Item>
                 <Nav.Link eventKey="home" href="/home">Home</Nav.Link>
             </Nav.Item>

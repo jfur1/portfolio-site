@@ -1,34 +1,28 @@
-import Nav  from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import { useState } from 'react';
 import Fade from 'react-reveal/Fade';
 
 export const NavBar = props => {
-    console.log(props)
-
-    const [key, setKey] = useState('/');
-
-    const selectKey = (selectedKey) => {
-        setKey(selectedKey);
-    }
 
     return (
         <Fade top duration={1600}>
-            <Nav justify variant="tabs my-3" activeKey={key} onSelect={selectKey}>
-            <Navbar.Brand className="ml-5" href="/home" >John Furlong</Navbar.Brand>
-                <Nav.Item>
-                    <Nav.Link eventKey="home" href="/home">Home</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey="education" href="/education">Education</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey="projects" href="/projects">Projects</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                    <Nav.Link eventKey="contact" href="/contact">Contact</Nav.Link>
-                </Nav.Item>
-            </Nav>
+            <header className="header">
+                <a className="signature" href="/home">
+                    <span className="signature-style">&lt; John Furlong /&gt;</span>
+                </a>
+                <ul className="menu">
+                    <li>
+                        <a href="/home" style={{backgroundColor:"transparent"}}>Home</a>
+                    </li>
+                    <li>
+                        <a href="/education" style={{backgroundColor:"transparent"}}>Education</a>
+                    </li>
+                    <li>
+                        <a href="/projects" style={{backgroundColor:"transparent"}}>Projects</a>
+                    </li>
+                    <li>
+                        <a href="/contact" style={{backgroundColor:"transparent"}}>Contact</a>
+                    </li>
+                </ul>
+            </header>
         </Fade>
     )
 }

@@ -13,7 +13,7 @@ import { NavBar } from './pages/NavBar'
 
 function App() {
   return (
-    <>
+    <div style={{backgroundColor: "#F7F5E6", height:"200%", minHeight:"100vh", backgroundSize: "cover"}}>
       <Router>
         <div>
           <NavBar/>
@@ -36,7 +36,7 @@ function App() {
           </Switch>
         </div>
       </Router>
-    </>
+    </div>
   );
 }
 

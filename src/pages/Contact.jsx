@@ -1,4 +1,9 @@
 import Slide from 'react-reveal/Slide';
+import { ReactComponent as Svg } from "../img/data-science.svg";
+import Pdf from '../docs/john-furlong-resume.pdf';
+import Tooltip from 'react-bootstrap/Tooltip';
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import { ReactComponent as CvSvg } from '../img/CvSvg.svg';
 
 export function Contact(props) {
 
@@ -6,7 +11,68 @@ export function Contact(props) {
         <div className="main">
             <Slide bottom duration={1600}>
                 <div className="tab-main">
-                    <h1>Contact Me</h1>
+                    <div className="tab-text">
+                        <Svg style={{width: "100%", height: "300px", display: "flex"}}/>
+                    </div>
+                    <div className="home-text">
+                        <h1 style={{textAlign: "center"}}>Contact Me</h1>
+                        <p style={{textAlign: "center"}}>Computer Science graduate from the University of Colorado Boulder.
+                        Computer Science graduate from the University of Colorado Boulder.
+                        Computer Science graduate from the University of Colorado Boulder.
+                        Computer Science graduate from the University of Colorado Boulder.
+                        </p>
+                        <div className="social-media-container">
+                            <div className="social-media mt-3 mb-1">
+                                <a href="https://github.com/jfur1" style={{color: "black"}} target="_blank" rel="noreferrer">
+                                    <OverlayTrigger
+                                        placement="top"
+                                        overlay={
+                                            <Tooltip id={`tooltip-top`}>
+                                                <strong>GitHub</strong>
+                                            </Tooltip>
+                                    }>
+                                        <i class="fab fa-github fa-3x"></i>
+                                    </OverlayTrigger>
+                                </a>
+                                <a href="https://www.linkedin.com/in/john-furlong-3b2259150/" target="_blank" rel="noreferrer">
+                                    <OverlayTrigger
+                                        placement="top"
+                                        overlay={
+                                            <Tooltip id={`tooltip-top`}>
+                                                <strong>LinkedIn</strong>
+                                            </Tooltip>
+                                    }>
+                                        <i class="fab fa-linkedin fa-3x mx-3"></i>
+                                    </OverlayTrigger>
+                                </a>
+                                <a href="mailto:johnfurlong24@gmail.com" style={{color: "#ea4335"}} target="_blank" rel="noreferrer">
+                                    <OverlayTrigger
+                                        placement="top"
+                                        overlay={
+                                            <Tooltip id={`tooltip-top`}>
+                                                <strong>Gmail</strong>
+                                            </Tooltip>
+                                    }>
+                                        <i class="fab fa-google fa-3x"></i>
+                                    </OverlayTrigger>
+                                </a>
+                                <a href={Pdf} target="_blank" rel="noreferrer">
+                                    <OverlayTrigger
+                                        placement="top"
+                                        overlay={
+                                            <Tooltip id={`tooltip-top`}>
+                                                <strong>My Resume</strong>
+                                            </Tooltip>
+                                    }>
+                                        <CvSvg className="mx-3 mt-1" height="2.5rem" width="2.5rem"/>
+                                    </OverlayTrigger>
+                                </a>
+                            </div>
+                            <div className="social-media-buttons mt-4">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Slide>
         </div>

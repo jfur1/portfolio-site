@@ -1,10 +1,29 @@
 export const Project = (props) => {
-
+    console.log(props)
     return(
         <div className="project">
-            <h3>{props.project}</h3>
-            <p>{props.description}</p>
-            <h6>Created on: {props.created}</h6>
+            <a href={props.href} alt="Demo" target="_blank" rel="noreferrer" className="clean-link">
+                <h3 style={{textDecoration: "none;"}}><i className="fas fa-project-diagram fa-xs"></i> {props.project}</h3>
+                <p className="my-1">{props.description}</p>
+
+                <div className="row px-4 py-2" style={{justifyContent: "flex-start"}}>
+                    <h6 className="ml-1 mr-3" style={{alignSelf: "center"}}>
+                        Created on: {props.created}
+                    </h6>
+                    <div className="project-img">
+                        {props.Img1 ? props.Img1 : null}
+                    </div>
+                    <div className="project-img">
+                        {props.Img2 ? props.Img2: null}
+                    </div>
+                    <div className="project-img">
+                        {props.Img3 ? props.Img3: null}
+                    </div>
+                    <div className="project-img">
+                        {props.Img4 ? props.Img4: null}
+                    </div>
+                </div>
+            </a>
         </div>
     )
 }

@@ -127,7 +127,7 @@ export function Projects(props) {
                     />
                     <Project 
                         project = "Forte Music App"
-                        description="Full stack application to match musicians with local tutors."    
+                        description="Full stack application to match musicians with local tutors. Users can register, login, create lesson meetings, and search for teachers."    
                         created="May 2019"
                         href="https://github.com/jfur1/cs-project"
                         Img1={                            
@@ -173,7 +173,7 @@ export function Projects(props) {
                     />
                     <Project 
                         project = "DNS Name Resolution Engine"
-                        description="Multi-threaded application, written in C, which resolves domain names to IP addresses."    
+                        description="Multi-threaded application, written in C, which resolves domain names to IP addresses. Requester/resolver threads share a memory buffer via mutex locks, pthreads, and semaphores."    
                         created="July 2020"
                         href="https://github.com/jfur1/operating-systems/tree/master/PA3"
                         Img1={
@@ -189,9 +189,9 @@ export function Projects(props) {
                     />
                     <Project 
                         project = "Blob Detection"
-                        description="Python program to detect blobs from sample images."    
+                        description="Python program implementing blob detection via color filtering, blob expansion, and centroid computations."    
                         created="January 2021"
-                        href="https://jfur1.github.io/pathfinding/"
+                        href="https://github.com/jfur1/blob-detection"
                         Img1={
                             <OverlayTrigger
                             placement="top"
@@ -205,7 +205,7 @@ export function Projects(props) {
                     />
                     <Project 
                         project = "Sorting Visualizer"
-                        description="React application to visualize various sorting algorithms."    
+                        description="React application to visualize various sorting algorithms like DFS, BFS, Astar, and Dijkstra's."    
                         created="January 2021"
                         href="https://jfur1.github.io/sorting-visualizer/"
                         Img1={                            

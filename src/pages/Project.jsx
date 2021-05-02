@@ -3,11 +3,11 @@ export const Project = (props) => {
     return(
         <div className="project">
             <a href={props.href} alt="Demo" target="_blank" rel="noreferrer" className="clean-link">
-                <h3 style={{textDecoration: "none;"}}><i className="fas fa-project-diagram fa-xs"></i> {props.project}</h3>
-                <p className="my-1">{props.description}</p>
+                <h4 className="my-2 mx-3"><i className="fas fa-project-diagram fa-xs"></i> {props.project}</h4>
+                <p className="my-1 mx-2">{props.description}</p>
 
-                <div className="row px-4 py-2" style={{justifyContent: "flex-start"}}>
-                    <h6 className="ml-1 mr-3" style={{alignSelf: "center"}}>
+                <div className="row px-4 py-1" style={{justifyContent: "flex-start"}}>
+                    <h6 className="ml-1 mr-3 mt-3" style={{alignSelf: "center;", fortWeight:"bold;"}}>
                         Created on: {props.created}
                     </h6>
                     <div className="project-img">

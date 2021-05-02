@@ -194,6 +194,7 @@ h1.skills-heading{
 .project{
   margin: 1rem;
   max-width: 420px;
+  max-height: 200px;
   padding: 10px;
   border: 5px solid gray;
   border-radius: 0.85rem;

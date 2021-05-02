@@ -3,9 +3,11 @@ import Slide from 'react-reveal/Slide';
 export function Contact(props) {
 
     return (
-        <div>
-            <Slide left>
-                <h1>Contact</h1>
+        <div className="main">
+            <Slide bottom duration={1600}>
+                <div className="tab-main">
+                    <h1>Contact Me</h1>
+                </div>
             </Slide>
         </div>
     )

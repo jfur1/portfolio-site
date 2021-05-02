@@ -65,6 +65,15 @@ ul.icons {
   width: 90%;
 }
 
+h1.skills-section{
+  display: block;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 5rem;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
 h1.skills-heading{
   display: block;
   font-size: 2em;
@@ -101,9 +110,9 @@ h1.skills-heading{
   gap: 1%;
   justify-content: center;
   padding: 20px 20px;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-right: auto;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   margin-left: auto;
 }
 
@@ -129,4 +138,63 @@ h1.skills-heading{
 
 .skills-icons>*{
   flex: 1 1 200px;
+}
+
+
+.social-media-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+.social-media{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-media-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 10px;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 0px;
+  margin-left: 0;
+}
+
+.tab-main>*{
+  flex: 1 1 250px;
+}
+
+.tab-text{
+  display: block;
+  align-self: center;
+}
+
+.projects{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  margin-top: 3rem;
+}
+
+.project{
+  margin: 1rem;
+  max-width: 420px;
+  padding: 10px;
+  border: 5px solid gray;
+  border-radius: 0.85rem;
 }

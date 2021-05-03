@@ -1,9 +1,9 @@
 import Slide from 'react-reveal/Slide';
-import { ReactComponent as Svg } from "../img/data-science.svg";
 import Pdf from '../docs/john-furlong-resume.pdf';
 import Tooltip from 'react-bootstrap/Tooltip';
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import { ReactComponent as CvSvg } from '../img/CvSvg.svg';
+import Image from "../img/profile-avatar.jpg"
 
 export function Contact(props) {
 
@@ -11,10 +11,12 @@ export function Contact(props) {
         <div className="main">
             <Slide bottom duration={1600}>
                 <div className="tab-main">
-                    <div className="tab-text">
-                        <Svg style={{width: "100%", height: "300px", display: "flex"}}/>
+                    <div className="home-text pt-3 ml-5">
+                        <div class="image-cropper mr-0">
+                            <img src={Image} alt="Me" className="avatar rounded" />
+                        </div>
                     </div>
-                    <div className="home-text">
+                    <div className="home-text pt-2">
                         <h1 style={{textAlign: "center"}}>Contact Me</h1>
                         <p style={{textAlign: "center"}}>Computer Science graduate from the University of Colorado Boulder.
                         Computer Science graduate from the University of Colorado Boulder.

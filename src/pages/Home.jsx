@@ -2,6 +2,9 @@ import Fade from 'react-reveal/Fade';
 import Tooltip from 'react-bootstrap/Tooltip';
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Pdf from '../docs/john-furlong-resume.pdf';
+import CloudPng from '../img/cloud2.svg';
+import Tools from '../img/tools.png';
+import Brain from '../img/brain.gif';
 import { ReactComponent as HtmlSvg } from '../img/html5.svg';
 import { ReactComponent as CssSvg } from '../img/css3.svg';
 import { ReactComponent as JsSvg } from '../img/logo-javascript.svg';
@@ -24,9 +27,10 @@ import { ReactComponent as GitHubSvg } from '../img/github-logo.svg';
 import { ReactComponent as AnacondaSvg } from '../img/anaconda.svg';
 import { ReactComponent as JupyterSvg } from '../img/jupyter.svg';
 import { ReactComponent as MySqlSvg } from '../img/MySQL-Logo.wine.svg';
+import { ReactComponent as VbSvg } from "../img/vb.svg";
+import { ReactComponent as VMwareSvg } from "../img/vmware.svg";
 import { ReactComponent as Me } from '../img/me.svg';
 import { ReactComponent as CvSvg } from '../img/CvSvg.svg';
-import { ReactComponent as DataScienceSvg } from "../img/data-science.svg";
 import { ReactComponent as SoftwareDevSvg } from '../img/custom-software-development.svg';
 
 export const Home = (props) => {
@@ -35,7 +39,7 @@ export const Home = (props) => {
         <div className="main">
             <Fade bottom duration={1600}>
                 <div className="home-main">
-                    <div className="home-text">
+                    <div className="home-text mt-2">
                         <h1>John Furlong</h1>
                         <p>Computer Science graduate from the University of Colorado Boulder.
                         Computer Science graduate from the University of Colorado Boulder.
@@ -94,8 +98,8 @@ export const Home = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="home-img">
-                        <Me/>
+                    <div className="home-img ml-5 mt-3">
+                        <Me width="80%"/>
                     </div>
             </div>
             </Fade>
@@ -103,7 +107,7 @@ export const Home = (props) => {
             <Fade bottom duration={1800} delay={300}>
                 <h1 className="skills-section" style={{fontFamily: "Noto Sans JP, sans-serif;"}}>Who am I?</h1>
             </Fade>
-                <div className="skills-main">
+                <div className="skills-main mb-5">
                     <Fade left duration={2000}>
                     <div className="skills-img">
                         <SoftwareDevSvg/>
@@ -258,10 +262,10 @@ export const Home = (props) => {
                     </Fade>
                 </div>
 
-                <div className="skills-main">
+                <div className="skills-main my-5">
                     <Fade left duration={2000}>
                     <div className="skills-img">
-                        <DataScienceSvg/>
+                        <img src={Brain} alt="Loading..." width="99%" height="400px"></img>
                     </div>
                     </Fade>
                     <Fade right duration={2000}>
@@ -314,10 +318,10 @@ export const Home = (props) => {
                     </Fade>
                 </div>
 
-                <div className="skills-main">
+                <div className="skills-main my-5">
                     <Fade left duration={2000}>
-                    <div className="skills-img">
-                        <DataScienceSvg/>
+                    <div className="skills-img mb-3">
+                        <img src={CloudPng} alt="Cloud Computing" width="100%" height="450px"></img>
                     </div>
                     </Fade>
                     <Fade right duration={2000}>
@@ -359,10 +363,10 @@ export const Home = (props) => {
                     </Fade>
                 </div>
 
-                <div className="skills-main">
+                <div className="skills-main mt-5">
                     <Fade left duration={2000}>
                     <div className="skills-img">
-                        <DataScienceSvg/>
+                        <img src={Tools} alt="Cloud Computing" width="100%" height="450px"></img>
                     </div>
                     </Fade>
                     <Fade right duration={2000}>
@@ -425,10 +429,28 @@ export const Home = (props) => {
                                         <MySqlSvg/>
                                     </OverlayTrigger>
                                 </li>
-                                <li name="VMware" className="dev-icons">
-
+                                <li name="VirtualBox" className="dev-icon">
+                                    <OverlayTrigger
+                                        placement="top"
+                                        overlay={
+                                            <Tooltip id={`tooltip-top`}>
+                                                <strong>VirtualBox</strong>
+                                            </Tooltip>
+                                    }>
+                                        <VbSvg height="1.25em" width="1.2em"/>
+                                    </OverlayTrigger>
                                 </li>
-
+                                <li name="VMware" className="dev-icon mx-2">
+                                    <OverlayTrigger
+                                        placement="top"
+                                        overlay={
+                                            <Tooltip id={`tooltip-top`}>
+                                                <strong>VMware</strong>
+                                            </Tooltip>
+                                    }>
+                                        <VMwareSvg height=".5em" width="2em"/>
+                                    </OverlayTrigger>
+                                </li>
                             </ul>
                         </div>
                         <div className="skills-text-list">

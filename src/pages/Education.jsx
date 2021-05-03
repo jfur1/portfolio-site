@@ -1,8 +1,8 @@
 import Fade from 'react-reveal/Fade';
 import CuLogo from '../img/cu-boulder-logo.png';
-import { ReactComponent as Svg } from "../img/data-science.svg";
 import { ReactComponent as GoogleSvg } from '../img/google-icon.svg';
 import { ReactComponent as StanfordSvg } from '../img/stanford.svg';
+import EducationPng from '../img/education.png';
 
 export function Education(props) {
 
@@ -10,17 +10,19 @@ export function Education(props) {
         <div className="main">
             <Fade bottom duration={1600}>
                 <div className="tab-main mb-5">
-                    <Svg height="15rem"/>
-                    <div className="tab-text">
+                    <div className="skills-img">
+                        <img src={EducationPng} alt="education" height="500px" width="100%"/>
+                    </div>
+                    <div className="tab-text ml-2">
                         <h1 style={{textAlign: "center"}}>Education</h1>
                         <h4 style={{textAlign: "center"}}>                             
-                            Basic Qualifications and Certifications
+                            Computer Science graduate from the University of Colorado Boulder. Computer Science graduate from the University of Colorado Boulder. Computer Science graduate from the University of Colorado Boulder.
                         </h4>
                     </div>
                 </div>
             </Fade>
             <Fade bottom duration={1800} delay={300}>
-                <h2 style={{textAlign: "center", marginTop:"80px"}}>Completed Degree</h2>
+                <h2 style={{textAlign: "center", marginTop:"60px"}}>Completed Degree</h2>
             </Fade>
             <Fade bottom duration={1600}>
                 <div className="edu-container">

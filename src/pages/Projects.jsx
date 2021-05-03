@@ -1,7 +1,6 @@
 import Slide from 'react-reveal/Slide';
 import Tooltip from 'react-bootstrap/Tooltip';
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import { ReactComponent as Svg } from "../img/data-science.svg";
 import { Project } from './Project';
 import { ReactComponent as HtmlSvg } from '../img/html5.svg';
 import { ReactComponent as CssSvg } from '../img/css3.svg';
@@ -12,6 +11,7 @@ import { ReactComponent as PostgresSvg } from '../img/postgresql.svg';
 import { ReactComponent as CSvg } from '../img/c-programming.svg';
 import { ReactComponent as PythonSvg } from '../img/python-logo.svg';
 import { ReactComponent as JQuerySvg } from '../img/jquery-1.svg';
+import ProjectsPng from '../img/projects.png';
 
 export function Projects(props) {
 
@@ -19,8 +19,8 @@ export function Projects(props) {
         <div className="main">
             <Slide bottom duration={1600}>
                 <div className="tab-main">
-                    <div className="tab-text">
-                        <Svg style={{width: "100%", height: "300px", display: "flex"}}/>
+                    <div className="skills-img mr-5">
+                        <img src={ProjectsPng} alt="Cloud Computing" width="100%" height="450px"></img>
                     </div>
                     <div className="tab-text">
                         <h1 style={{textAlign: "center"}}>Projects</h1>

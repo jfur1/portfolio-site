@@ -2,21 +2,25 @@ import Fade from 'react-reveal/Fade';
 import { useEffect, useState } from 'react'
 
 export const NavBar = props => {
-    console.log("PROPS:", props)
     const [tab, setTab] = useState("home");
 
     useEffect(() => {
-        const activeTab = window.location.pathname.substring(1, window.location.pathname.length);
-        console.log(activeTab);
-        if(tab === "home"){
+        console.log(window.location.pathname)
+        var activeTab = window.location.pathname.substring(1, window.location.pathname.length);
+
+        if(activeTab === "" || activeTab === "home"){
+            activeTab = "home";
             document.getElementById("home").style.borderBottom = "3px solid red";
+            setTab("home");
+            return;
         }
 
-        if(tab !== activeTab){
+        else if(tab !== activeTab){
             document.getElementById(activeTab).style.borderBottom = "3px solid red";
             document.getElementById(tab).style.borderBottom = "";
+            setTab(activeTab);
+            return;
         }
-        setTab(activeTab)
     }, [tab]);
 
     return (

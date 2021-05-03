@@ -18,10 +18,9 @@ export function Contact(props) {
                     </div>
                     <div className="home-text pt-2">
                         <h1 style={{textAlign: "center"}}>Contact Me</h1>
-                        <p style={{textAlign: "center"}}>Computer Science graduate from the University of Colorado Boulder.
-                        Computer Science graduate from the University of Colorado Boulder.
-                        Computer Science graduate from the University of Colorado Boulder.
-                        Computer Science graduate from the University of Colorado Boulder.
+                        <p style={{textAlign: "center"}}>
+                            Looking to discuss a project or just say hello?
+                            My inbox is open!
                         </p>
                         <div className="social-media-container">
                             <div className="social-media mt-3 mb-1">

@@ -16,7 +16,7 @@ export function Education(props) {
                     <div className="tab-text ml-2">
                         <h1 style={{textAlign: "center"}}>Education</h1>
                         <h4 style={{textAlign: "center"}}>                             
-                            Computer Science graduate from the University of Colorado Boulder. Computer Science graduate from the University of Colorado Boulder. Computer Science graduate from the University of Colorado Boulder.
+                            Basic Qualifications and Certifications
                         </h4>
                     </div>
                 </div>

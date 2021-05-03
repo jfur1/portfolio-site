@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect,
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Fade from 'react-reveal/Fade';
@@ -22,17 +23,23 @@ function App() {
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
           <Switch>
-            <Route path="/contact">
+            <Route exact path="/contact">
               <Contact />
             </Route>
-            <Route path="/projects">
+            <Route exact path="/projects">
               <Projects />
             </Route>
-            <Route path="/education">
+            <Route exact path="/education">
               <Education />
             </Route>
-            <Route path="/">
+            <Route exact path="/home">
               <Home />
+            </Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="*">
+              <Redirect to="/home"/>
             </Route>
           </Switch>
         </div>

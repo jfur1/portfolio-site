@@ -183,7 +183,7 @@ h1.skills-heading{
 }
 
 .home-text p{
-  font-size: 18px;
+  font-size: 20px;
   line-height: 40px;
   font-weight: 500;
   color: rgb(118, 131, 159);
@@ -207,7 +207,7 @@ h1.skills-heading{
 }
 
 .skills-main p{
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   color: rgb(118, 131, 159);
 }
@@ -281,7 +281,7 @@ h1.skills-heading{
 }
 
 .tab-text p{
-  font-size: 18px;
+  font-size: 20px;
   line-height: 30px;
   color: rgb(118, 131, 159);
   font-weight: 500;
@@ -413,6 +413,12 @@ h1.skills-heading{
   max-height: 950px;
   border: 5px solid grey;
   border-radius: 0.85rem;
+}
+
+.certification-card:hover{
+  transform: scale(1.06);
+  transition: 200ms ease-in;
+  box-shadow: 0 10px 30px -15px rgb(0 0 0 / 90%);
 }
 
 .certification-card>*{

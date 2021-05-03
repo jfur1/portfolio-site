@@ -32,6 +32,7 @@ import { ReactComponent as VMwareSvg } from "../img/vmware.svg";
 import { ReactComponent as Me } from '../img/me.svg';
 import { ReactComponent as CvSvg } from '../img/CvSvg.svg';
 import { ReactComponent as SoftwareDevSvg } from '../img/custom-software-development.svg';
+import { ReactComponent as PivotalSvg } from '../img/Tracker_Icon.svg';
 
 export const Home = (props) => {
   
@@ -41,10 +42,9 @@ export const Home = (props) => {
                 <div className="home-main">
                     <div className="home-text mt-2">
                         <h1>John Furlong</h1>
-                        <p>Computer Science graduate from the University of Colorado Boulder.
-                        Computer Science graduate from the University of Colorado Boulder.
-                        Computer Science graduate from the University of Colorado Boulder.
-                        Computer Science graduate from the University of Colorado Boulder.
+                        <p style={{fontSize: "2vw"}}>Computer Science graduate from the University of Colorado Boulder. I enjoy
+                            a good challenge annd working on meaningful projects that take me outside my comfort zone.
+                            Looking to join a collabrative and innovate team where I can continue to build end to end products.
                         </p>
                         <div className="social-media-container">
                             <div className="social-media mt-3 mb-1">
@@ -105,7 +105,7 @@ export const Home = (props) => {
             </Fade>
             
             <Fade bottom duration={1800} delay={300}>
-                <h1 className="skills-section" style={{fontFamily: "Noto Sans JP, sans-serif;"}}>Who am I?</h1>
+                <h1 className="skills-section" style={{fontFamily: "Noto Sans JP, sans-serif", fontSize: "50px"}}>Who am I?</h1>
             </Fade>
                 <div className="skills-main mb-5">
                     <Fade left duration={2000}>
@@ -115,7 +115,7 @@ export const Home = (props) => {
                     </Fade>
                     <Fade right duration={2000}>
                     <div className="skills-text">
-                        <h1 className="skills-heading">Full Stack Development</h1>
+                        <h1 className="skills-heading" style={{fontSize: "40px"}}>Full Stack Development</h1>
                         <div className="skills-icons">
                             <ul className="icons" style={{paddingInlineStart: "30px;"}}>
                                 <li name="HTML5" className="dev-icon">
@@ -270,7 +270,7 @@ export const Home = (props) => {
                     </Fade>
                     <Fade right duration={2000}>
                     <div className="skills-text">
-                        <h1 className="skills-heading">Data Science & AI</h1>
+                        <h1 className="skills-heading" style={{fontSize: "40px"}}>Data Science & AI</h1>
                         <div className="skills-icons">
                             <ul className="icons">
                                 <li name="Python" className="dev-icon">
@@ -326,7 +326,7 @@ export const Home = (props) => {
                     </Fade>
                     <Fade right duration={2000}>
                     <div className="skills-text">
-                        <h1 className="skills-heading mb-1">Cloud Architecture</h1>
+                        <h1 className="skills-heading mb-1" style={{fontSize: "40px"}}>Cloud Architecture</h1>
                         <div className="skills-icons">
                             <ul className="icons">
                                 <li name="AWS" className="dev-icon mx-2">
@@ -365,13 +365,13 @@ export const Home = (props) => {
 
                 <div className="skills-main mt-5">
                     <Fade left duration={2000}>
-                    <div className="skills-img">
+                    <div className="skills-img mt-2">
                         <img src={Tools} alt="Cloud Computing" width="100%" height="450px"></img>
                     </div>
                     </Fade>
                     <Fade right duration={2000}>
                     <div className="skills-text">
-                        <h1 className="skills-heading">Tools & Technologies</h1>
+                        <h1 className="skills-heading" style={{fontSize: "40px"}}>Tools & Technologies</h1>
                         <div className="skills-icons">
                             <ul className="icons">
                                 <li name="git" className="dev-icon mx-2">
@@ -394,6 +394,17 @@ export const Home = (props) => {
                                             </Tooltip>
                                     }>
                                         <GitHubSvg/>
+                                    </OverlayTrigger>
+                                </li>
+                                <li name="Pivotal" className="dev-icon mx-2">
+                                    <OverlayTrigger
+                                        placement="top"
+                                        overlay={
+                                            <Tooltip id={`tooltip-top`}>
+                                                <strong>Pivotal Tracker</strong>
+                                            </Tooltip>
+                                    }>
+                                        <PivotalSvg height="1em" width="1em"/>
                                     </OverlayTrigger>
                                 </li>
                                 <li name="Jupyter" className="dev-icon mx-2">
@@ -454,7 +465,7 @@ export const Home = (props) => {
                             </ul>
                         </div>
                         <div className="skills-text-list">
-                            <p>🔸 &nbsp;&nbsp;Git/Github for version control</p>
+                            <p>🔸 &nbsp;&nbsp;Git/Github for version control and Pivotal for progress tracking</p>
                             <p>🔸 &nbsp;&nbsp;Jupyter/Anaconda for data science and visualization</p>
                             <p>🔸 &nbsp;&nbsp;MySQL Workbench for relational models</p>
                             <p>🔸 &nbsp;&nbsp;Hypervisors like VMware and VirtualBox for development in Linux environments</p>

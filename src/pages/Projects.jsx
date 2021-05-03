@@ -25,17 +25,16 @@ export function Projects(props) {
                     <div className="tab-text">
                         <h1 style={{textAlign: "center"}}>Projects</h1>
                         <p style={{textAlign: "center"}}>
-                            Computer Science graduate from the University of Colorado Boulder.
-                            Computer Science graduate from the University of Colorado Boulder.
-                            Computer Science graduate from the University of Colorado Boulder.
-                            Computer Science graduate from the University of Colorado Boulder.
+                            My projects make use of a variety of tools and technologies. I am most experienced with full stack web development, but I also 
+                            enjoy data science projects and exploring machine learning. Currently trying to improve my skills in system design and big data architecture.
+                            Check out some of my projects below!
                         </p>
                     </div>
                 </div>
                 <div className="projects">
                     <Project 
                         project = "Pathfinding Visualizer"
-                        description="React application to visualize various pathfinding algorithms."    
+                        description="React application to visualize various pathfinding algorithms like DFS, BFS, Astar, and Dijkstra's."    
                         created="January 2021"
                         href="https://jfur1.github.io/pathfinding/"
                         Img1={
@@ -81,7 +80,7 @@ export function Projects(props) {
                     />
                     <Project 
                         project = "my-portfol.io"
-                        description="Full stack web application for users to host their portfolios on."    
+                        description="Full stack web application for users to host their portfolios on. Users can register, login, and upload portfolio content to their profile."    
                         created="January 2021"
                         href="http://www.my-portfol.io"
                         Img1={                            
@@ -205,7 +204,7 @@ export function Projects(props) {
                     />
                     <Project 
                         project = "Sorting Visualizer"
-                        description="React application to visualize various sorting algorithms like DFS, BFS, Astar, and Dijkstra's."    
+                        description="React application to visualize various sorting algorithms like quicksort, mergesort, bubblesort, and heapsort. "    
                         created="January 2021"
                         href="https://jfur1.github.io/sorting-visualizer/"
                         Img1={                            

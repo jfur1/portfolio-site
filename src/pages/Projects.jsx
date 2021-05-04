@@ -45,7 +45,7 @@ export function Projects(props) {
                                     <strong>HTML5</strong>
                                 </Tooltip>
                                 }>
-                            <HtmlSvg height="2.5em" width="2em" className="my-1"/>
+                            <HtmlSvg height="2.5rem" width="2.5rem" className="my-1"/>
                             </OverlayTrigger>}
                         Img2={
                             <OverlayTrigger
@@ -91,7 +91,7 @@ export function Projects(props) {
                                     <strong>HTML5</strong>
                                 </Tooltip>
                                 }>
-                            <HtmlSvg height="2.5em" width="2em" className="my-1"/>
+                            <HtmlSvg height="2.5rem" width="2.5rem" className="my-1"/>
                             </OverlayTrigger>}
                         Img2={
                             <OverlayTrigger
@@ -137,7 +137,7 @@ export function Projects(props) {
                                     <strong>HTML5</strong>
                                 </Tooltip>
                                 }>
-                            <HtmlSvg height="2.5em" width="2em" className="my-1"/>
+                            <HtmlSvg height="2.5rem" width="2.5rem" className="my-1"/>
                             </OverlayTrigger>}
                         Img2={
                             <OverlayTrigger
@@ -215,7 +215,7 @@ export function Projects(props) {
                                     <strong>HTML5</strong>
                                 </Tooltip>
                                 }>
-                            <HtmlSvg height="2.5em" width="2em" className="my-1"/>
+                            <HtmlSvg height="2.5rem" width="2.5rem" className="my-1"/>
                             </OverlayTrigger>}
                         Img2={
                             <OverlayTrigger

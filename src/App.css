@@ -83,7 +83,7 @@
 
 .header .signature-style{
   font-family: 'Allura', cursive;
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 600;
   color: rgb(0, 34, 108);
   padding: 20px 0px;
@@ -456,7 +456,7 @@
 
   .header ul {
     margin-left: 25%;
-    padding-top: 20px;
+    padding-top: 5px;
     list-style: none;
     overflow: hidden;
     font-family: 'Noto Sans JP', sans-serif;

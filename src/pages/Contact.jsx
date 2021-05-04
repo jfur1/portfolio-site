@@ -11,8 +11,8 @@ export function Contact(props) {
         <div className="main">
             <Slide bottom duration={1600}>
                 <div className="tab-main">
-                    <div className="home-text pt-3 ml-5">
-                        <div class="image-cropper mr-0">
+                    <div className="home-text pt-3 ml-3">
+                        <div class="image-cropper">
                             <img src={Image} alt="Me" className="avatar rounded" />
                         </div>
                     </div>

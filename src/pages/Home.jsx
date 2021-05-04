@@ -42,8 +42,8 @@ export const Home = (props) => {
                 <div className="home-main">
                     <div className="home-text mt-2">
                         <h1>John Furlong</h1>
-                        <p style={{fontSize: "2vw"}}>Computer Science graduate from the University of Colorado Boulder. I enjoy
-                            a good challenge annd working on meaningful projects that take me outside my comfort zone.
+                        <p>Computer Science graduate from the University of Colorado Boulder. I enjoy
+                            a good challenge and working on meaningful projects that push me outside my comfort zone.
                             Looking to join a collabrative and innovate team where I can continue to build end to end products.
                         </p>
                         <div className="social-media-container">
@@ -98,8 +98,8 @@ export const Home = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="home-img ml-5 mt-3">
-                        <Me width="80%"/>
+                    <div className="home-img mt-3">
+                        <Me/>
                     </div>
             </div>
             </Fade>
@@ -109,7 +109,7 @@ export const Home = (props) => {
             </Fade>
                 <div className="skills-main mb-5">
                     <Fade left duration={2000}>
-                    <div className="skills-img">
+                    <div className="skills-img dev">
                         <SoftwareDevSvg/>
                     </div>
                     </Fade>
@@ -265,7 +265,7 @@ export const Home = (props) => {
                 <div className="skills-main my-5">
                     <Fade left duration={2000}>
                     <div className="skills-img">
-                        <img src={Brain} alt="Loading..." width="99%" height="400px"></img>
+                        <img src={Brain} alt="Loading..." width="99%"></img>
                     </div>
                     </Fade>
                     <Fade right duration={2000}>
@@ -320,8 +320,8 @@ export const Home = (props) => {
 
                 <div className="skills-main my-5">
                     <Fade left duration={2000}>
-                    <div className="skills-img mb-3">
-                        <img src={CloudPng} alt="Cloud Computing" width="100%" height="450px"></img>
+                    <div className="skills-img">
+                        <img src={CloudPng} alt="Cloud Computing" width="100%" ></img>
                     </div>
                     </Fade>
                     <Fade right duration={2000}>
@@ -365,8 +365,8 @@ export const Home = (props) => {
 
                 <div className="skills-main mt-5">
                     <Fade left duration={2000}>
-                    <div className="skills-img mt-2">
-                        <img src={Tools} alt="Cloud Computing" width="100%" height="450px"></img>
+                    <div className="skills-img cc mt-2">
+                        <img src={Tools} alt="Cloud Computing" width="100%"></img>
                     </div>
                     </Fade>
                     <Fade right duration={2000}>

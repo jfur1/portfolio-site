@@ -15,7 +15,7 @@ import { NavBar } from './pages/NavBar'
 
 function App() {
   return (
-    <div style={{backgroundColor: "#F7F5E6", height:"225%", minHeight:"100vh", backgroundSize: "cover"}}>
+    <div style={{backgroundColor: "#F7F5E6", width:"100vw", minHeight:"100vh", backgroundSize: "cover"}} className="app-div">
       <Router>
         <div>
           <NavBar/>

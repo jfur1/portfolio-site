@@ -19,10 +19,10 @@ export function Projects(props) {
         <div className="main">
             <Slide bottom duration={1600}>
                 <div className="tab-main">
-                    <div className="skills-img mr-5">
-                        <img src={ProjectsPng} alt="Cloud Computing" width="100%" height="450px"></img>
+                    <div className="skills-img project-img">
+                        <img src={ProjectsPng} alt="Cloud Computing" width="100%"></img>
                     </div>
-                    <div className="tab-text">
+                    <div className="tab-text project-tab">
                         <h1 style={{textAlign: "center"}}>Projects</h1>
                         <p style={{textAlign: "center"}}>
                             My projects make use of a variety of tools and technologies. I am most experienced with full stack web development, but I also 

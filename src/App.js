@@ -45,7 +45,7 @@ function App() {
         </div>
       </Router>
       <Fade bottom duration={1800} delay={300}>
-        <p className="footer-text mb-0 pb-4">John Furlong (2021)</p>
+        <p className="footer-text mb-0 pb-4">John Furlong (2022)</p>
       </Fade>
     </div>
   );

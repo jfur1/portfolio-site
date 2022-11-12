@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Fade from 'react-reveal/Fade';
+import styles from './App.module.scss'
 import { Home } from './pages/Home'
 import { Education } from './pages/Education'
 import { Projects } from './pages/Projects'
